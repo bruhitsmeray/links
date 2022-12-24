@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+header li,
+header a,
+header button {
+    color: var(--font-color);
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+header div {
+    cursor: pointer;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px 0px;
+
+    max-width: 700px;
+    width: 91%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* NOTE: This is where the dark mode button code section starts. */
+
+.checkbox {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.checkbox:checked + .label {
+    background-color: white;
+}
+
+.checkbox:checked + .label .ball {
+    background-color: rgb(40, 40, 40);
+    transform: translateX(24px);
+}
+
+.label {
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+    position: relative;
+
+    height: 24px;
+    width: 48px;
+
+    transition: all 0.3 ease 0s;
+}
+
+.ball {
+    background-color: white;
+    border-radius: 10px;
+
+    position: relative;
+    left: 4px;
+
+    height: 16px;
+    width: 16px;
+
+    transition: all 0.2s linear;
+}
+
+/* NOTE: This is where the dark mode button code section end. */
+
+/* NOTE: This section is reserved for the message code. */
+
+.message {
+    color: var(--font-color);
+    background: var(--primary-color);
+    border-radius: 10px;
+
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.message h3 {
+    background: var(--primary-color);
+}
+
+.message a {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+/* This is where the message code section ends. */
+
+@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {
+    /*.nav-links {*/
+    /*    display: none;*/
+    /*}*/
+
+    .logo {
+        display: none;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    header li,
+    header a,
+    header button {
+        font-size: 12px;
+    }
+}
