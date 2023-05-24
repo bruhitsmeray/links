@@ -16,14 +16,14 @@ async function copyLink(e) {
 shareButtons.forEach(shareButton =>
     shareButton.addEventListener('click', copyLink));
 
-sharePageButton(sharePageButton.addEventListener('click', copyPageLink));
+// sharePageButton(sharePageButton.addEventListener('click', copyPageLink));
 
-async function copyPageLink(e) {
-    const link = 'https://itswhiteline.github.io/links/';
-    try {
-        await navigator.clipboard.writeText(link);
-        alert("Link copied in clipboard.");
-    } catch(err) {
-        console.error(err);
-    };
-};
+// async function copyPageLink(e) {
+//     const link = 'https://itswhiteline.github.io/links/';
+//     try {
+//         await navigator.clipboard.writeText(link);
+//         alert("Link copied in clipboard.");
+//     } catch(err) {
+//         console.error(err);
+//     };
+// };

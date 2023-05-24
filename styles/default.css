@@ -1,31 +1,3 @@
-:root {
-    --bg-color: #fff;
-    --box-color: #f4f5ff;
-    --border-color: rgba(50, 50, 50, 0.4);
-    --font-color: #424242;
-
-    --heading-color: #393e41;
-    --heading-font-color: #f4f5ff;
-    --hover-color: rgba(50, 50, 50, 0.8);
-
-    --primary-color: #e55934;
-    --secondary-color: #955100;
-}
-
-[data-theme="dark"] {
-    --bg-color: #393e41;
-    --box-color: #454b4f;
-    --border-color: rgba(244, 245, 255, 0.4);
-    --font-color: #fff;
-
-    --heading-color: #fff;
-    --heading-font-color: #424242;
-    --hover-color: #f4f5ff;
-
-    --primary-color: #fa7921;
-    --secondary-color: #fdcf99;
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -34,14 +6,15 @@
 }
 
 body {
-    align-items: center;
     background-color: var(--bg-color);
     color: var(--font-color);
 
+    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    width: 100vw;
+    height: 100vh;
 }
 
 .share_btn {
@@ -58,10 +31,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding: 24px 0px;
-
+    width: 100%;
     max-width: 680px;
-    width: 91%;
 }
 
 .img_profilepic {
@@ -77,15 +48,15 @@ body {
     display: flex;
     flex-direction: column;
 
-    padding: 24px;
+    padding: 24px 0;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 12px
+    font-size: 18px
 }
 
 a {
@@ -101,16 +72,18 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     border: var(--border-color) solid 1px;
-    border-radius: 10px;
+    border-radius: 20px;
 
     display: flex;
     justify-content: space-between;
 
-    margin: 8px;
+    font-weight: bold;
+
+    margin: 8px 0;
     padding: 16px;
 
-    height: 36px;
-    width: 91%;
+    height: 32px;
+    width: 100%;
 }
 
 .link_box:hover {

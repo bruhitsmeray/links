@@ -1,0 +1,13 @@
+:root {
+    --bg-color: #fff;
+    --box-color: #f4f5ff;
+    --border-color: rgba(50, 50, 50, 0.4);
+    --font-color: #424242;
+
+    --heading-color: #393e41;
+    --heading-font-color: #f4f5ff;
+    --hover-color: rgba(50, 50, 50, 0.8);
+
+    --primary-color: #e55934;
+    --secondary-color: #955100;
+}
