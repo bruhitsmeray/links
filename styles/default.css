@@ -116,3 +116,49 @@ a {
     height: 24px;
     width: 24px;
 }
+
+@media screen and (max-width: 540px) {
+    .container {
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    h3,
+    a {
+        font-size: 12px
+    }
+
+    .link_box {   
+        height: 16px;
+    }
+
+    .link_icon,
+    .link_share_btn {
+        height: 32px;
+        width: 32px;
+    }
+
+    .link_icon svg,
+    .link_share_btn svg {
+        height: 16px;
+        width: 16px;
+    }
+
+    footer{
+        padding: 18px 0;
+    }
+
+    footer p,
+    footer a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .container {
+        max-width: 220px;
+    }
+}
